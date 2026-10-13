@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контур – концепт сайта студии пилатеса</title>
+  <meta name="description"
+    content="Студия пилатеса «Контур»: маты, реформер, стретчинг, здоровая спина и индивидуальные занятия. Расписание, цены и запись на пробное занятие." />
+
+  <meta property="og:title" content="Контур – студия пилатеса" />
+  <meta property="og:description"
+    content="Концепт студии пилатеса: адаптивный интерфейс, расписание, галерея и демонстрация записи." />
+  <meta name="theme-color" content="#33402c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-cover.webp" />
+
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Контур – студия пилатеса, на главную">
+        <img src="assets/images/logo-kontur.png" alt="Контур — студия пилатеса" width="626" height="640" />
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu"
+        aria-label="Открыть меню">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Меню</span>
+      </button>
+
+      <nav class="primary-nav" aria-label="Основная навигация">
+        <ul id="primary-menu">
+          <li><a href="#about">О студии</a></li>
+          <li><a href="#directions">Направления</a></li>
+          <li><a href="#schedule">Расписание</a></li>
+          <li><a href="#coaches">Тренеры</a></li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <a id="top"></a>
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <img class="hero-bg" src="assets/images/hero-studio.webp"
+        alt="Занятие пилатесом в студии «Контур»: мягкий свет, коврик, спокойный темп" width="1672" height="941"
+        decoding="async" fetchpriority="high" />
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <h1 id="hero-heading" class="hero-anim" style="--d: 0.15s">Твоё тело – <em>твоя опора</em></h1>
+          <p class="hero-lead hero-anim" style="--d: 0.35s">Пилатес для сильного тела, спокойной головы и внимательного
+            отношения к себе.</p>
+
+          <div class="hero-actions hero-anim" style="--d: 0.55s">
+            <a class="btn btn-primary hero-booking" href="#contact">Записаться на бесплатное занятие <span
+                aria-hidden="true">→</span></a>
+            <a class="link-inline hero-schedule-link" href="#schedule"><span class="btn-icon-circle"
+                aria-hidden="true">▸</span> Смотреть расписание</a>
+          </div>
+        </div>
+
+        <dl class="hero-stats hero-anim" style="--d: 0.9s">
+          <div class="hero-trial">
+            <dt class="trial-price"><span class="trial-zero">0</span><span class="trial-currency">₽</span></dt>
+            <dd class="trial-ribbon">первое<br />занятие</dd>
+          </div>
+          <div>
+            <dt>5</dt>
+            <dd>направлений</dd>
+          </div>
+          <div>
+            <dt>8</dt>
+            <dd>человек в группе</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- О студии -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container studio-about">
+        <div class="studio-copy">
+          <p class="studio-eyebrow">Пространство для движения</p>
+          <h2 id="about-heading">Больше, чем тренировка</h2>
+          <p>Мы создаём пространство, где легко начать и спокойно продолжать: небольшие группы, внимание тренера к
+            технике и понятный первый шаг.</p>
+          <p>Светлый зал, оборудование для разных направлений и место, где можно переодеться и подготовиться к занятию.
+          </p>
+          <a class="link-inline studio-direction-link" href="#directions">Выбрать направление</a>
+        </div>
+        <div class="studio-gallery" aria-label="Фотографии пространства">
+          <div class="studio-stage">
+            <figure class="studio-slide"><img src="assets/images/space-1.webp" alt="Зал для занятий пилатесом"
+                width="1200" height="900" loading="lazy" decoding="async" />
+              <figcaption>Зал</figcaption>
+            </figure>
+            <figure class="studio-slide" hidden><img src="assets/images/space-2.webp" alt="Коврики в студии"
+                width="1200" height="900" loading="lazy" decoding="async" />
+              <figcaption>Коврики</figcaption>
+            </figure>
+            <figure class="studio-slide" hidden><img src="assets/images/space-3.webp" alt="Раздевалка со шкафчиками"
+                width="1200" height="900" loading="lazy" decoding="async" />
+              <figcaption>Раздевалка</figcaption>
+            </figure>
+            <figure class="studio-slide" hidden><img src="assets/images/space-4.webp" alt="Зона ресепшена" width="1200"
+                height="900" loading="lazy" decoding="async" />
+              <figcaption>Ресепшен</figcaption>
+            </figure>
+            <div class="studio-arrows" hidden><button type="button" class="studio-arrow" data-gallery-prev
+                aria-label="Предыдущее фото">←</button><button type="button" class="studio-arrow" data-gallery-next
+                aria-label="Следующее фото">→</button></div>
+          </div>
+          <div class="studio-thumbs" role="group" aria-label="Выбор фотографии" hidden><button type="button"
+              class="studio-thumb" data-photo="0" aria-label="Показать фото: Зал" aria-pressed="true"><img
+                src="assets/images/space-1.webp" alt="" width="120" height="90"
+                loading="lazy" /><span>Зал</span></button><button type="button" class="studio-thumb" data-photo="1"
+              aria-label="Показать фото: Коврики" aria-pressed="false"><img src="assets/images/space-2.webp" alt=""
+                width="120" height="90" loading="lazy" /><span>Коврики</span></button><button type="button"
+              class="studio-thumb" data-photo="2" aria-label="Показать фото: Раздевалка" aria-pressed="false"><img
+                src="assets/images/space-3.webp" alt="" width="120" height="90"
+                loading="lazy" /><span>Раздевалка</span></button><button type="button" class="studio-thumb"
+              data-photo="3" aria-label="Показать фото: Ресепшен" aria-pressed="false"><img
+                src="assets/images/space-4.webp" alt="" width="120" height="90"
+                loading="lazy" /><span>Ресепшен</span></button></div>
+          <p class="studio-gallery-status visually-hidden" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Направления -->
+    <section id="directions" aria-labelledby="directions-heading">
+      <div class="container">
+        <div class="section-heading-row" data-reveal>
+          <div class="section-heading" data-reveal>
+            <h2 id="directions-heading">Направления</h2>
+            <p>Выберите подходящий формат. Не уверены – поможем определиться.</p>
+          </div>
+        </div>
+        <div class="card-grid directions" id="direction-cards">
+          <article class="direction-card" data-reveal>
+            <div class="direction-photo"><img src="assets/images/direction-mat.webp"
+                alt="Пилатес на матах — иллюстрация учебного концепта" width="800" height="533" decoding="async"
+                loading="lazy" /></div>
+            <div class="direction-body">
+              <h3>Пилатес на матах</h3>
+              <p class="for-whom">Базовая практика для любого уровня</p>
+              <p class="duration">55 минут</p>
+              <p>Упражнения на коврике: дыхание, контроль корпуса, плавный темп. Подходит для первого занятия.</p><a
+                class="card-link" href="#schedule" data-filter-type="mat">К расписанию <span
+                  aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="direction-card" data-reveal>
+            <div class="direction-photo"><img src="assets/images/direction-reformer.webp"
+                alt="Реформер — иллюстрация учебного концепта" width="800" height="533" decoding="async"
+                loading="lazy" /></div>
+            <div class="direction-body">
+              <h3>Реформер</h3>
+              <p class="for-whom">Групповая работа на тренажёре</p>
+              <p class="duration">55 минут</p>
+              <p>Занятия на реформере в небольшой группе – под контролем тренера, с постепенным усложнением.</p><a
+                class="card-link" href="#schedule" data-filter-type="reformer">К расписанию <span
+                  aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="direction-card" data-reveal>
+            <div class="direction-photo"><img src="assets/images/direction-stretching.webp"
+                alt="Стретчинг — иллюстрация учебного концепта" width="800" height="533" decoding="async"
+                loading="lazy" /></div>
+            <div class="direction-body">
+              <h3>Стретчинг</h3>
+              <p class="for-whom">Мягкость, гибкость, свобода движения</p>
+              <p class="duration">55 минут</p>
+              <p>Растяжка и работа с подвижностью суставов в спокойном темпе, без силовой нагрузки.</p><a
+                class="card-link" href="#schedule" data-filter-type="stretching">К расписанию <span
+                  aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="direction-card" data-reveal>
+            <div class="direction-photo"><img src="assets/images/direction-back.webp"
+                alt="Здоровая спина — иллюстрация учебного концепта" width="800" height="533" decoding="async"
+                loading="lazy" /></div>
+            <div class="direction-body">
+              <h3>Здоровая спина</h3>
+              <p class="for-whom">Мягкая работа с осанкой и опорой корпуса</p>
+              <p class="duration">55 минут</p>
+              <p>Упражнения на укрепление мышц кора и бережную работу со спиной. Не заменяет консультацию врача.</p><a
+                class="card-link" href="#schedule" data-filter-type="back-health">К расписанию <span
+                  aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="direction-card" data-reveal>
+            <div class="direction-photo"><img src="assets/images/direction-individual.webp"
+                alt="Индивидуальные занятия — иллюстрация учебного концепта" width="800" height="533" decoding="async"
+                loading="lazy" /></div>
+            <div class="direction-body">
+              <h3>Индивидуальные занятия</h3>
+              <p class="for-whom">Личный план и полное внимание тренера</p>
+              <p class="duration">55 минут</p>
+              <p>Формат один на один с тренером. Время и программа согласовываются отдельно с администратором.</p><a
+                class="card-link" href="#schedule" data-filter-type="individual">К расписанию <span
+                  aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Первое посещение -->
+    <section id="first-visit" aria-labelledby="first-visit-heading">
+      <div class="container">
+        <div class="first-visit-card" data-reveal>
+          <div class="fv-intro">
+            <h2 id="first-visit-heading">Первое посещение</h2>
+            <p class="fv-lead">Начните спокойно даже без опыта</p>
+            <ul class="fv-checks">
+              <li>
+                <span class="mark" aria-hidden="true"><svg viewBox="0 0 20 20">
+                    <path d="M4.5 10.5l3.4 3.4 7.6-7.6" />
+                  </svg></span>
+                <span>Тренер объяснит базовые положения и подстроит темп под вас</span>
+              </li>
+              <li>
+                <span class="mark" aria-hidden="true"><svg viewBox="0 0 20 20">
+                    <path d="M4.5 10.5l3.4 3.4 7.6-7.6" />
+                  </svg></span>
+                <span>Небольшая группа – до 8 человек, есть время на вопросы</span>
+              </li>
+            </ul>
+            <a class="btn btn-light" href="#contact">Записаться бесплатно</a>
+          </div>
+
+          <div class="fv-details">
+            <h3 class="fv-title">Три шага до занятия</h3>
+            <ol class="fv-steps">
+              <li>
+                <span class="fv-num" aria-hidden="true">1</span>
+                <div>
+                  <h4>Выберите занятие</h4>
+                  <p>Посмотрите направления и расписание, выберите удобное время</p>
+                </div>
+              </li>
+              <li>
+                <span class="fv-num" aria-hidden="true">2</span>
+                <div>
+                  <h4>Напишите администратору</h4>
+                  <p>Администратор подтвердит время и формат, ответит на вопросы</p>
+                </div>
+              </li>
+              <li>
+                <span class="fv-num" aria-hidden="true">3</span>
+                <div>
+                  <h4>Приходите за 10–15 минут</h4>
+                  <p>Чтобы переодеться и освоиться в студии</p>
+                </div>
+              </li>
+            </ol>
+
+            <hr class="fv-divider" />
+
+            <h3 class="fv-title">Что взять с собой</h3>
+            <ul class="fv-bring">
+              <li>
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M11 4 4 8l2.5 6 3-1.2V28h13V12.8l3 1.2L28 8l-7-4c-.6 2-2.7 3.4-5 3.4S11.6 6 11 4z" />
+                </svg>
+                <span>Удобную одежду, не стесняющую движений</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path
+                    d="M10 3h10v12.5l7 4.6c1.7 1.1 2.1 3.4.8 5-1.3 1.6-3.7 1.7-5.2.3L11.4 18.6C10.5 17.8 10 16.7 10 15.5V3z" />
+                  <path d="M10 8h10" />
+                </svg>
+                <span>Носки с нескользящей подошвой – без&nbsp;обуви</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M13 3h6v3h-6z" />
+                  <path d="M12 6h8v3l1.5 3v15a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V12L12 9V6z" />
+                  <path d="M14 18h4M14 22h4" />
+                </svg>
+                <span>Воду</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Расписание -->
+    <section id="schedule" aria-labelledby="schedule-heading">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2 id="schedule-heading">Расписание</h2>
+        </div>
+
+        <h3 class="visually-hidden" id="schedule-day-label">День недели</h3>
+        <div class="tab-row" id="schedule-days" role="group" aria-labelledby="schedule-day-label"></div>
+
+        <h3 class="visually-hidden" id="schedule-type-label">Направление</h3>
+        <div class="tab-row chip-row" id="schedule-types" role="group" aria-labelledby="schedule-type-label"></div>
+
+        <p id="schedule-day-heading"></p>
+        <div id="schedule-list" aria-live="polite">
+          <div class="schedule-row">
+            <div class="schedule-row-time">Пн, 09:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Пилатес на матах</span><span
+                class="schedule-row-coach">Анна · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Пн, 18:30</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Здоровая спина</span><span
+                class="schedule-row-coach">Анна · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Вт, 10:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Индивидуальные занятия</span><span
+                class="schedule-row-coach">Игорь · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Вт, 11:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Реформер</span><span
+                class="schedule-row-coach">Игорь · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Вт, 18:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Пилатес на матах</span><span
+                class="schedule-row-coach">Анна · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Вт, 19:30</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Стретчинг</span><span
+                class="schedule-row-coach">Мария · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Ср, 09:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Пилатес на матах</span><span
+                class="schedule-row-coach">Мария · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Ср, 18:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Реформер</span><span
+                class="schedule-row-coach">Игорь · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Ср, 19:30</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Здоровая спина</span><span
+                class="schedule-row-coach">Анна · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Чт, 11:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Индивидуальные занятия</span><span
+                class="schedule-row-coach">Игорь · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Чт, 18:30</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Стретчинг</span><span
+                class="schedule-row-coach">Мария · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Пт, 09:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Пилатес на матах</span><span
+                class="schedule-row-coach">Анна · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Пт, 17:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Реформер</span><span
+                class="schedule-row-coach">Игорь · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Сб, 11:00</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Пилатес на матах</span><span
+                class="schedule-row-coach">Мария · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-row-time">Сб, 12:30</div>
+            <div class="schedule-row-info"><span class="schedule-row-title">Стретчинг</span><span
+                class="schedule-row-coach">Мария · 55 минут</span></div><a class="btn btn-primary btn-sm"
+              href="#contact">К записи</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Цены -->
+    <section id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2 id="pricing-heading">Цены</h2>
+          <p>Первое групповое занятие – бесплатно. Затем выберите разовое посещение или абонемент.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card" data-reveal>
+            <h3>Пробное занятие</h3>
+            <span class="amount">0 ₽ <small>первое посещение</small></span>
+            <ul>
+              <li>Для тех, кто впервые в студии</li>
+              <li>Групповые направления; индивидуальный формат – отдельно</li>
+              <li>Время согласуется с администратором</li>
+            </ul>
+          </div>
+          <div class="price-card" data-reveal>
+            <h3>Разовое занятие</h3>
+            <span class="amount">1 500 ₽ <small>за занятие</small></span>
+            <ul>
+              <li>Без абонемента</li>
+              <li>Подходит для нерегулярных посещений</li>
+            </ul>
+          </div>
+          <div class="price-card" data-reveal>
+            <h3>Абонемент на 8 занятий</h3>
+            <span class="amount">9 600 ₽ <small>за пакет</small></span>
+            <ul>
+              <li>Срок действия – 30 дней с первого занятия</li>
+              <li>Перенос и отмена – не позднее чем за 6 часов</li>
+              <li>Условия уточняются у администратора</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Тренеры -->
+    <section id="coaches" aria-labelledby="coaches-heading">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2 id="coaches-heading">Тренеры</h2>
+        </div>
+        <div class="coach-grid" id="coach-cards">
+          <article class="coach-card" data-reveal>
+            <div class="coach-photo"><img src="assets/images/coach-anna.webp" alt="Тренер Анна" width="800" height="800"
+                decoding="async" loading="lazy" /></div>
+            <h3>Анна</h3>
+            <p>Пилатес на матах, «Здоровая спина»</p>
+            <p class="coach-concept"></p>
+          </article>
+          <article class="coach-card" data-reveal>
+            <div class="coach-photo"><img src="assets/images/coach-igor.webp" alt="Тренер Игорь" width="800"
+                height="800" decoding="async" loading="lazy" /></div>
+            <h3>Игорь</h3>
+            <p>Реформер, индивидуальные занятия</p>
+            <p class="coach-concept"></p>
+          </article>
+          <article class="coach-card" data-reveal>
+            <div class="coach-photo"><img src="assets/images/coach-maria.webp" alt="Тренер Мария" width="800"
+                height="800" decoding="async" loading="lazy" /></div>
+            <h3>Мария</h3>
+            <p>Стретчинг, пилатес на матах</p>
+            <p class="coach-concept"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2 id="faq-heading">Остались вопросы?</h2>
+          <p>Мы всегда на связи и с радостью поможем выбрать подходящий формат.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" data-reveal>
+            <summary>Можно записаться без опыта занятий пилатесом?</summary>
+            <p>Да, для этого есть пилатес на матах и пробное занятие – тренер объяснит базовые положения перед основной
+              частью.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Что взять с собой на занятие?</summary>
+            <p>Удобную одежду, носки с нескользящей подошвой и воду. Специальное оборудование не нужно.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Когда приходить – заранее или к началу?</summary>
+            <p>Лучше прийти за 10–15 минут до начала, чтобы переодеться и найти удобное место в зале.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Как отменить или перенести запись?</summary>
+            <p>Напишите администратору по контакту из раздела «Контакты» заранее – точные условия отмены уточняются у
+              студии.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Нужно ли своё оборудование?</summary>
+            <p>Нет, всё необходимое есть в студии. Для реформера и индивидуальных занятий набор может отличаться –
+              уточните у тренера.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Где вход в студию?</summary>
+            <p>Вход с лицевой стороны здания (со стороны улицы). Ориентир – вывеска КОНТУР.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-card" data-reveal>
+          <div class="section-heading" data-reveal>
+            <h2 id="contact-heading">Контакты</h2>
+          </div>
+          <dl class="contact-details">
+            <dt>Адрес</dt>
+            <dd>Адрес не указан</dd>
+            <dt>Часы работы</dt>
+            <dd>Пн–Сб, 09:00–20:00; Вс – выходной</dd>
+            <dt>Контакты</dt>
+            <dd><a href="#contact" data-demo="true">Связаться со студией</a></dd>
+            <dt>Запись</dt>
+            <dd>Через администратора – по кнопке ниже</dd>
+          </dl>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="#contact" data-demo="true">Написать в Telegram</a>
+            <a class="btn btn-ghost" href="#contact" data-demo="true">Написать в WhatsApp</a>
+            <a class="btn btn-outline" href="#contact" data-demo="true">Позвонить</a>
+          </div>
+        </div>
+        <div class="map-box" id="studio-map" data-reveal role="region" aria-label="Карта">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=37.573856%2C55.751574&amp;z=10&amp;l=map"
+            title="Демонстрация встроенной карты: обзор Москвы, без метки студии" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <p class="map-caption">Обзорная карта без метки студии</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <a href="#directions">Направления</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#pricing">Цены</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <p style="margin: 0;">
+        © 2026 «Контур». Концепт сайта для портфолио.
+      </p>
+    </div>
+  </footer>
+
+  <dialog id="contact-demo" aria-labelledby="contact-demo-title">
+    <div class="demo-dialog-inner"><button type="button" class="dialog-close" aria-label="Закрыть окно">×</button>
+      <h2 id="contact-demo-title">Запись на занятие</h2>
+      <p id="contact-selection" class="contact-selection" hidden></p>
+      <p>Запись пока недоступна: контакт студии не подключён.</p><button type="button" class="btn btn-primary"
+        id="close-contact">Понятно</button>
+    </div>
+  </dialog>
+  <noscript>
+    <p class="container">Фильтры и демонстрация записи работают с JavaScript. Все направления, цены и занятия доступны
+      выше.</p>
+  </noscript>
+  <script src="js/data.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
